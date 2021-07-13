@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+#l-r{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-screen{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    flex-grow: 1;
+    width: 40%;
+    background-color: white;
+}
+

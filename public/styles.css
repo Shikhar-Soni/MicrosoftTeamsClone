@@ -1,0 +1,336 @@
+#video-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: rgb(32, 30, 30);
+    overflow-y: auto;
+}
+
+/*source: https://www.w3schools.com/css/css3_buttons.asp */
+.button {
+    margin-inline-start: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #6591bb;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+  
+.button:hover {background-color: #334181}
+  
+.button:active {
+    background-color: #233158;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#start-message > #form-tag > span{
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(233, 173, 198);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#form-tag {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top-message {
+    text-align: center;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    background-color: plum;
+    margin: 10px;
+    font-size: 3em;
+}
+
+video{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#start-message {
+    display: block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-window{
+    display: none;
+}
+
+#video-chat{
+    height: 100vh;
+    display: flex;
+}
+
+#video-screen{
+    flex: 1;
+    width: 80ch;
+    display: flex;
+    flex-direction: column;
+}
+
+#zero-input{
+    font-style: italic;
+    color: red;
+    display: none;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#controls{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+
+#controls > button {
+    cursor: pointer;
+}
+
+span{
+    visibility: visible;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url(https://image.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    word-wrap: break-word;
+}
+
+.link-style{
+    display: flex;
+    justify-content: center;
+}
+a:link {
+    color:#ff0000;
+    text-decoration:none;
+}
+a:visited {
+    color:#0000ff;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+#chat-screen{
+    display: none;
+    flex: 0.25;
+    flex-direction: column;
+    padding: 0px 0px;
+    border: 5px solid rgb(59, 53, 53);
+}
+
+#chat-title{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(88, 41, 61);
+    flex-grow: 0.04;
+    color: white;
+    font-size:1.5em;
+}
+
+#chat-screen #chat-display{
+    background-color: #fff;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#style-text{
+    color:black;
+    padding: 10px 2px;
+}
+
+#chat-display{
+    height: 50%;
+    overflow-y: auto;
+}
+
+#chat-text{
+    height: 35px;
+    background-color: black;
+    color: white;
+    box-sizing:border-box;
+    padding: 0px;
+    margin-bottom: 2px solid white;
+}
+
+/*
+    scroll bar styling
+*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #977373; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+#style-chat-name{
+    font-weight: bolder;
+    font-size: 1.1em;
+    padding-left: 5%;
+}
+
+.spec-button{
+    color: white !important;
+}
+
+#participant-list{
+    display: none;
+    flex-direction: column;
+    flex: 0.25;
+    border: 5px solid rgb(59, 53, 53);
+}
+
+#insert-participants{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight:1em;
+}
+
+.style-participant-list{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    overflow-y: auto;
+}
+
+#participant-list-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    padding-bottom: 10%;
+    font-weight: bolder;
+}
+
+#chat-display div {
+    width: 18vw;
+}
+
+#joining-message-chat{
+    display: flex;
+    justify-content: center;
+}
+
+#main-body-message{
+    padding-left: 5%;
+    overflow-x: auto;
+}
+
+#screen-capture{
+    display: none;
+    height: 630px;
+    width: 1120px;
+    /*
+    9 : 16 height to width ratio
+    */
+}
+
+#lock-close{
+    display: none;
+}
+
+/*
+    from cssbuttongenerator
+*/
+.btn {
+    background: #c9d0d4;
+    background-image: -webkit-linear-gradient(top, #c9d0d4, #949ca1);
+    background-image: -moz-linear-gradient(top, #c9d0d4, #949ca1);
+    background-image: -ms-linear-gradient(top, #c9d0d4, #949ca1);
+    background-image: -o-linear-gradient(top, #c9d0d4, #949ca1);
+    background-image: linear-gradient(to bottom, #c9d0d4, #949ca1);
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.03;
+    width:max-content;
+    flex-grow: 1;
+  }
+  
+  .btn:hover {
+    background: #868d91;
+    background-image: -webkit-linear-gradient(top, #868d91, #526775);
+    background-image: -moz-linear-gradient(top, #868d91, #526775);
+    background-image: -ms-linear-gradient(top, #868d91, #526775);
+    background-image: -o-linear-gradient(top, #868d91, #526775);
+    background-image: linear-gradient(to bottom, #868d91, #526775);
+    text-decoration: none;
+  }
+
+  #extra-chat {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+
+.copy-link{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+/*
+    referred to from w3schools.com
+*/
+.copy-link .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(94, 83, 83);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0.9;
+}
