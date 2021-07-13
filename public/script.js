@@ -487,7 +487,7 @@ const chatWithoutLogging = () => {
     window.location.href = `/${_roomID}/message`;
 }
 
-let countTotal = 0 //stores the exact count of persons other than us currently connected to the meet
+let countTotal = 0
 const UpdateParticipantCount = (operation_type) => {
     ParticipantCountElement = document.getElementById('participant-count');
     if(operation_type === '+'){
