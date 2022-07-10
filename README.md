@@ -3,8 +3,8 @@ A video chat app with screen sharing, real time text chat and meet lock.
 
 # Install the required dependencies
 
-* npm i express peer ejs socket.io uuid
-* npm i -g --save-dev nodemon
+* clone the repo
+* npm install
 
 # To run the app
 
